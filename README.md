@@ -11,7 +11,7 @@
 include "class.Kriweb.php"; // Call library file
 $api = new Kriweb();
 $api->user("email","password"); // Login to Kriweb's System
-$api->test(true); // True or False (Not Required. Default condition is "false")
+$api->test(true); // true or false (Not Required. Default condition is "false")
 ```
 ### Check Domain Availability
 
