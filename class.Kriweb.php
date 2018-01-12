@@ -3,6 +3,7 @@ session_start();
 class Kriweb
 {
     private $apiUrl = "https://kriweb.com/rest/";
+    private $test = false;
     public function __construct()
     {
         $this->curl = curl_init();
