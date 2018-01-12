@@ -37,7 +37,6 @@ class Kriweb
             $_SESSION["KRW-Token"]         = $response["token"];
             $_SESSION["KRW-LastTokenTime"] = strtotime("+500 seconds");
             return $_SESSION["KRW-Token"];
-
         } else {
             return $_SESSION["KRW-Token"];
         }
