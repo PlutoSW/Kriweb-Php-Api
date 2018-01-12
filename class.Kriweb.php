@@ -70,19 +70,19 @@ class Kriweb
         } else {
             $domainList[] = array("domain" => $domains);
         }
-        return $this->run("whois", json_encode($domainList))["whoisresult"];
+        return $this->run("whois", json_encode($domainList));
     }
     public function register($domain, $year = 1)
     {
         $domainInfo = array("domain" => $domain, "type" => "register", "year" => $year);
 
-        return $this->run("domain", json_encode($domainInfo))["domainresult"];
+        return $this->run("domain", json_encode($domainInfo));
     }
     public function transfer($domain, $year = 1, $transfercode)
     {
         $domainInfo = array("domain" => $domain, "type" => "register", "year" => $year, "epp" => $transfercode);
 
-        return $this->run("domain", json_encode($domainInfo))["domainresult"];
+        return $this->run("domain", json_encode($domainInfo));
     }
     public function __destruct()
     {
